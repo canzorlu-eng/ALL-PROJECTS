@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Can Zorlu</title>
+  <style>
+  
+body {
+    font-size: 16px;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tabletler için stil */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 10px;
+    }
+}
+
+/* Mobil cihazlar için stil */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+/* Flexbox düzenlemesi */
+.divOz {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Mobilde alt alta sıralanmasını sağlar */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.divOz img {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px; /* Maksimum genişliği ayarla */
+    height: auto; /* Yüksekliği otomatik ayarla */
+}
+
+.content {
+    max-width: 600px; /* İsteğinize göre ayarlayabilirsiniz */
+    text-align: center; /* Mobilde düzgün hizalanması için ortala */
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Mobilde daha dar boşluk */
+    height: auto;
+    flex-wrap: wrap;
+}
+
+a {
+    position: relative;
+    cursor: pointer;
+    color: black;
+    font-size: 20px; /* Mobilde biraz daha küçük font */
+    padding: 0.5rem 1rem;
+    transition: color 0.25s;
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: black;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+a:hover::after {
+    scale: 1 1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+  </style>
+
+</head>
+<body>
+<nav>
+   <a href="index.html">Home</a> 
+   <a href="projects-python.html">Projects on Python</a> 
+   <a href="projects-java.html">Projects on Java</a> 
+   <a href="projects-cpp.html">Projects on C++</a> 
+   <a href="contact.html">Contact</a> 
+</nav>
+
+  <header>
+    <h1>Personal Website</h1>
+  </header>
+
+  <div class="divOz">
+    <img src="assets/cz.jpeg" alt="bulunamadı" width="200" height="200">
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hi everyone! My name is Can and it's my personal website where I share my software projects. 
+        I'm a student at Hacettepe University in Ankara. My major is Computer Science and I'm in my 2nd year. 
+        You can contact me through my social media accounts or e-mail.</p>
+    </div>
+</div>
+
+<div style="text-align:center;">
+    <a href="https://www.linkedin.com/in/can-zorlu-691455246/" target="_blank" ><img src="assets/linkedin.png" alt="bulunamadı" width="50" height="30"></a>
+    <a href="https://www.instagram.com/zorlu3214/" target="_blank" ><img src="assets/insta.png" alt="bulunamadı" width="50" height="30"></a>
+    <a href="https://x.com/ZorluHasan1234" target="_blank" ><img src="assets/x.png" alt="bulunamadı" width="50" height="30"></a>
+</div>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

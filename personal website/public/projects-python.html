@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Can Zorlu</title>
+<style>
+    body {
+      font-size: 16px;
+      margin: 20px;
+    }
+
+    /* Tabletler için stil */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+        margin: 10px;
+      }
+    }
+
+    /* Mobil cihazlar için stil */
+    @media (max-width: 480px) {
+      body {
+        font-size: 12px;
+        margin: 5px;
+      }
+    }
+
+    /* Navigasyon ve link stilini düzenle */
+    nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom:50px;
+    }
+
+    a {
+      position: relative;
+      cursor: pointer;
+      color: black;
+      font-size: 20px;
+      padding: 0.5rem 1rem;
+      transition: color 0.25s;
+    }
+
+    a::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: black;
+      scale: 1 0;
+      z-index: -1;
+      transition: 0.45s;
+      border-radius: 10px;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    a:hover::after {
+      scale: 1 1;
+    }
+
+    /* Liste stili */
+    ul {
+      padding: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Mobilde daha küçük font */
+    @media (max-width: 768px) {
+      a {
+        font-size: 18px;
+      }
+      ul {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      a {
+        font-size: 16px;
+        padding: 0.3rem 0.6rem;
+      }
+      ul {
+        padding: 5px;
+      }
+      li {
+        font-size: 14px;
+      }
+    }
+
+    /* Sosyal medya simgeleri */
+    a img {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (max-width: 768px) {
+      a img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      a img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<nav>
+   <a href="index.html">Home</a> 
+   <a href="projects-python.html">Projects on Python</a> 
+   <a href="projects-java.html">Projects on Java</a> 
+   <a href="projects-cpp.html">Projects on C++</a> 
+   <a href="contact.html">Contact</a> 
+</nav>
+
+<ul>
+<li><a href="python/Keylogger.py">Keylogger</a></li>
+<li><a href="python/face-detection.py">Face Detection</a></li>
+<li><a href="python/betting analysis.py">Betting Analysis</a></li>
+<li><a href="python/currency converter.py">Currency Converter</a></li>
+<li><a href="python/candy-crush-with-numbers.py">Candy Crush(numbers)</a></li>
+<li><a href="python/blind_valley.py">Blind Valley</a></li>
+<li><a href="python/insta-bot.py">Instagram Bot</a></li>
+<li><a href="python/sudoku.py">Sudoku Solver</a></li>
+<li><a href="python/short-link.py">Link Shortener</a></li>
+<li><a href="python/unfollwers.py">Finding Unfollowers</a></li>
+<li><a href="python/video-size-calculator.py">Video Size Calculator</a></li>
+<li><a href="python/notepad.py">Notepad</a></li>
+<li><a href="python/access-analyser.py">Instagram Access Analyser</a></li>
+<li><a href="python/user-interface.zip" download>User Interface</a></li>
+<li><a href="python/calculator.py" >Simple Calculator</a></li>
+</ul>
+
+<a href="https://www.linkedin.com/in/can-zorlu-691455246/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" width="50" height="30"></a>
+<a href="https://www.instagram.com/zorlu3214/" target="_blank"><img src="assets/insta.png" alt="Instagram" width="50" height="30"></a>
+<a href="https://x.com/ZorluHasan1234" target="_blank"><img src="assets/x.png" alt="Twitter/X" width="50" height="30"></a>
+
+<footer>
+  <p>&copy; All rights reserved.</p>
+</footer>
+</body>
+</html>
